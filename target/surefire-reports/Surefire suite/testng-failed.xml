@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="testCases.TC27_PartnerUnderreviewTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="isVerified"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.TC27_PartnerUnderreviewTest -->
+      <class name="vendortestcases.TC_22_Open_Position_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="isCountCorrect"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- vendortestcases.TC_22_Open_Position_Test -->
+      <class name="testCases.TC2_ProfileUpdateTest">
+        <methods>
+          <include name="updateProfile"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.TC2_ProfileUpdateTest -->
+      <class name="vendortestcases.TC_10_Matching_bench_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="isMatching"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- vendortestcases.TC_10_Matching_bench_Test -->
+      <class name="testCases.TC1_ClientMobVerifiedTest">
+        <methods>
+          <include name="check_Mob"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.TC1_ClientMobVerifiedTest -->
+      <class name="testCases.TC0_loginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="login_verify"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.TC0_loginTest -->
+      <class name="testCases.TC3_RequirementUpdateTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="requirement"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.TC3_RequirementUpdateTest -->
+      <class name="testCases.TC_30_No_Applicant_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="isCount"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.TC_30_No_Applicant_Test -->
+      <class name="testCases.TC_57_PasswordVerified_Test">
+        <methods>
+          <include name="isPassword"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.TC_57_PasswordVerified_Test -->
+      <class name="testCases.TC_33_Verified_partnet_applicant_Comment_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="isVerified_Comment"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.TC_33_Verified_partnet_applicant_Comment_Test -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

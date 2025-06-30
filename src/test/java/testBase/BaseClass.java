@@ -31,6 +31,9 @@ public class BaseClass {
     public Logger logger;
     public Properties p;
     
+    String os="Windows";
+    String br="chrome";
+    
     @AfterSuite
     public void allure() throws IOException {
     	ProcessBuilder builder = new ProcessBuilder("cmd.exe");
@@ -47,7 +50,8 @@ public class BaseClass {
     
     @SuppressWarnings("deprecation")
 	@BeforeClass(groups= "Sanity")
-    @Parameters({"os","browser"})
+    //@Parameters({"os","browser"})
+    
     public void setUp(String os,String br) throws IOException {
     	
     	FileReader file=new FileReader("./src/test/resources/config.properties");

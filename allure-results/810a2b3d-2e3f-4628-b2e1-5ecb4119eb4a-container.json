@@ -1,0 +1,1 @@
+{"uuid":"810a2b3d-2e3f-4628-b2e1-5ecb4119eb4a","name":"Suite","children":["91b3afe2-1b74-4f06-bb82-1db46f3f9a9b"],"befores":[],"afters":[{"name":"allure","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1751260761503,"stop":1751260761514}],"start":1751260745045,"stop":1751260761516}

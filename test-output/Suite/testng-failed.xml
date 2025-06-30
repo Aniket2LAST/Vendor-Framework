@@ -9,6 +9,24 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="testCases.TC_30_No_Applicant_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="isCount"/>
+          <include name="setUp"/>
+          <include name="getDriver"/>
+          <include name="allure"/>
+        </methods>
+      </class> <!-- testCases.TC_30_No_Applicant_Test -->
+      <class name="testCases.TC_57_PasswordVerified_Test">
+        <methods>
+          <include name="isPassword"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="getDriver"/>
+          <include name="allure"/>
+        </methods>
+      </class> <!-- testCases.TC_57_PasswordVerified_Test -->
       <class name="testCases.TC2_ProfileUpdateTest">
         <methods>
           <include name="updateProfile"/>

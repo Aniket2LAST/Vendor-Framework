@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="5" failed="3" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Update message: Status updated successfully]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-06-30T10:49:45 IST" name="Suite" finished-at="2025-06-30T10:50:16 IST" duration-ms="31676">
+  <suite started-at="2025-06-30T11:48:53 IST" name="Suite" finished-at="2025-06-30T11:50:50 IST" duration-ms="116382">
     <groups>
+      <group name="Sanity">
+        <method signature="TC1_ClientMobVerifiedTest.check_Mob()[pri:0, instance:testCases.TC1_ClientMobVerifiedTest@78fa769e]" name="check_Mob" class="testCases.TC1_ClientMobVerifiedTest"/>
+      </group> <!-- Sanity -->
       <group name="Smoke">
-        <method signature="TC9_Requirement_Client_Page.client()[pri:0, instance:testCases.TC9_Requirement_Client_Page@50029372]" name="client" class="testCases.TC9_Requirement_Client_Page"/>
+        <method signature="TC2_ProfileUpdateTest.updateProfile()[pri:0, instance:testCases.TC2_ProfileUpdateTest@22f59fa]" name="updateProfile" class="testCases.TC2_ProfileUpdateTest"/>
+        <method signature="TC9_Requirement_Client_Page.client()[pri:0, instance:testCases.TC9_Requirement_Client_Page@61710c6]" name="client" class="testCases.TC9_Requirement_Client_Page"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2025-06-30T10:49:45 IST" name="Test" finished-at="2025-06-30T10:50:16 IST" duration-ms="31676">
+    <test started-at="2025-06-30T11:48:53 IST" name="Test" finished-at="2025-06-30T11:50:50 IST" duration-ms="116382">
       <class name="testCases.TC9_Requirement_Client_Page">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testCases.TC9_Requirement_Client_Page@50029372]" started-at="2025-06-30T10:49:45 IST" name="getDriver" finished-at="2025-06-30T10:49:45 IST" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testCases.TC9_Requirement_Client_Page@61710c6]" started-at="2025-06-30T11:48:53 IST" name="getDriver" finished-at="2025-06-30T11:48:53 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC9_Requirement_Client_Page@50029372]" started-at="2025-06-30T10:49:45 IST" name="setUp" finished-at="2025-06-30T10:49:48 IST" duration-ms="3212" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC9_Requirement_Client_Page@61710c6]" started-at="2025-06-30T11:48:53 IST" name="setUp" finished-at="2025-06-30T11:48:56 IST" duration-ms="2982" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,19 +37,386 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="client()[pri:0, instance:testCases.TC9_Requirement_Client_Page@50029372]" started-at="2025-06-30T10:49:48 IST" name="client" description="Verify client search functionality in Requirement_Client_Page" finished-at="2025-06-30T10:50:16 IST" duration-ms="27427" status="PASS">
+        <test-method signature="client()[pri:0, instance:testCases.TC9_Requirement_Client_Page@61710c6]" started-at="2025-06-30T11:48:56 IST" name="client" description="Verify client search functionality in Requirement_Client_Page" finished-at="2025-06-30T11:49:24 IST" duration-ms="27473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- client -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC9_Requirement_Client_Page@50029372]" started-at="2025-06-30T10:50:16 IST" name="tearDown" finished-at="2025-06-30T10:50:16 IST" duration-ms="723" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC9_Requirement_Client_Page@61710c6]" started-at="2025-06-30T11:49:24 IST" name="tearDown" finished-at="2025-06-30T11:49:25 IST" duration-ms="707" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="allure()[pri:0, instance:testCases.TC9_Requirement_Client_Page@50029372]" started-at="2025-06-30T10:50:17 IST" name="allure" finished-at="2025-06-30T10:50:17 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="allure()[pri:0, instance:testCases.TC9_Requirement_Client_Page@61710c6]" started-at="2025-06-30T11:50:50 IST" name="allure" finished-at="2025-06-30T11:50:50 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allure -->
       </class> <!-- testCases.TC9_Requirement_Client_Page -->
+      <class name="testCases.TC3_RequirementUpdateTest">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testCases.TC3_RequirementUpdateTest@7ac296f6]" started-at="2025-06-30T11:49:25 IST" name="getDriver" finished-at="2025-06-30T11:49:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC3_RequirementUpdateTest@7ac296f6]" started-at="2025-06-30T11:49:25 IST" name="setUp" finished-at="2025-06-30T11:49:27 IST" duration-ms="2205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="requirement()[pri:0, instance:testCases.TC3_RequirementUpdateTest@7ac296f6]" started-at="2025-06-30T11:49:27 IST" name="requirement" finished-at="2025-06-30T11:49:38 IST" duration-ms="11383" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Update message: Status updated successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- requirement -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC3_RequirementUpdateTest@7ac296f6]" started-at="2025-06-30T11:49:38 IST" name="tearDown" finished-at="2025-06-30T11:49:39 IST" duration-ms="729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC3_RequirementUpdateTest -->
+      <class name="testCases.TC_57_PasswordVerified_Test">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testCases.TC_57_PasswordVerified_Test@16612a51]" started-at="2025-06-30T11:50:27 IST" name="getDriver" finished-at="2025-06-30T11:50:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_57_PasswordVerified_Test@16612a51]" started-at="2025-06-30T11:50:27 IST" name="setUp" finished-at="2025-06-30T11:50:29 IST" duration-ms="2024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="isPassword()[pri:0, instance:testCases.TC_57_PasswordVerified_Test@16612a51]" started-at="2025-06-30T11:50:29 IST" name="isPassword" finished-at="2025-06-30T11:50:30 IST" duration-ms="1500" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //input[@name='oldPassword'])[1] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@name='oldPassword'])[1]' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aac34582962461aaaa594a81541a6bdb, findElement {using=xpath, value=//input[@name='oldPassword'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Fleeek\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52970}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52970/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aac34582962461aaaa594a81541a6bdb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //input[@name='oldPassword'])[1] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//input[@name='oldPassword'])[1]' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aac34582962461aaaa594a81541a6bdb, findElement {using=xpath, value=//input[@name='oldPassword'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Fleeek\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52970}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52970/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aac34582962461aaaa594a81541a6bdb
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy36.sendKeys(Unknown Source)
+at pageObjects.Password_Verification_Page.isPasswordChange(Password_Verification_Page.java:32)
+at testCases.TC_57_PasswordVerified_Test.isPassword(TC_57_PasswordVerified_Test.java:13)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_57_PasswordVerified_Test@16612a51]" started-at="2025-06-30T11:50:31 IST" name="tearDown" finished-at="2025-06-30T11:50:31 IST" duration-ms="692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_57_PasswordVerified_Test -->
+      <class name="testCases.TC2_ProfileUpdateTest">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testCases.TC2_ProfileUpdateTest@22f59fa]" started-at="2025-06-30T11:49:52 IST" name="getDriver" finished-at="2025-06-30T11:49:52 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC2_ProfileUpdateTest@22f59fa]" started-at="2025-06-30T11:49:52 IST" name="setUp" finished-at="2025-06-30T11:49:54 IST" duration-ms="2144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="updateProfile()[pri:0, instance:testCases.TC2_ProfileUpdateTest@22f59fa]" started-at="2025-06-30T11:49:54 IST" name="updateProfile" description="Update profile information in user account" finished-at="2025-06-30T11:50:06 IST" duration-ms="11986" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Aniket kush] but found [Anikeths kingkingkingking]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Aniket kush] but found [Anikeths kingkingkingking]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at pageObjects.ProfilePage.updateProfile(ProfilePage.java:48)
+at testCases.TC2_ProfileUpdateTest.updateProfile(TC2_ProfileUpdateTest.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProfile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC2_ProfileUpdateTest@22f59fa]" started-at="2025-06-30T11:50:06 IST" name="tearDown" finished-at="2025-06-30T11:50:07 IST" duration-ms="710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC2_ProfileUpdateTest -->
+      <class name="testCases.TC_33_Verified_partnet_applicant_Comment_Test">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_33_Verified_partnet_applicant_Comment_Test@54e041a4]" started-at="2025-06-30T11:50:31 IST" name="setUp" finished-at="2025-06-30T11:50:34 IST" duration-ms="2551" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testCases.TC_33_Verified_partnet_applicant_Comment_Test@54e041a4]" started-at="2025-06-30T11:50:31 IST" name="getDriver" finished-at="2025-06-30T11:50:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method signature="isVerified_Comment()[pri:0, instance:testCases.TC_33_Verified_partnet_applicant_Comment_Test@54e041a4]" started-at="2025-06-30T11:50:34 IST" name="isVerified_Comment" finished-at="2025-06-30T11:50:41 IST" duration-ms="7356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isVerified_Comment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_33_Verified_partnet_applicant_Comment_Test@54e041a4]" started-at="2025-06-30T11:50:41 IST" name="tearDown" finished-at="2025-06-30T11:50:42 IST" duration-ms="716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_33_Verified_partnet_applicant_Comment_Test -->
+      <class name="testCases.TC1_ClientMobVerifiedTest">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testCases.TC1_ClientMobVerifiedTest@78fa769e]" started-at="2025-06-30T11:50:07 IST" name="getDriver" finished-at="2025-06-30T11:50:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC1_ClientMobVerifiedTest@78fa769e]" started-at="2025-06-30T11:50:07 IST" name="setUp" finished-at="2025-06-30T11:50:09 IST" duration-ms="2167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="check_Mob()[pri:0, instance:testCases.TC1_ClientMobVerifiedTest@78fa769e]" started-at="2025-06-30T11:50:09 IST" name="check_Mob" finished-at="2025-06-30T11:50:26 IST" duration-ms="17242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_Mob -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC1_ClientMobVerifiedTest@78fa769e]" started-at="2025-06-30T11:50:26 IST" name="tearDown" finished-at="2025-06-30T11:50:27 IST" duration-ms="700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC1_ClientMobVerifiedTest -->
+      <class name="testCases.TC_30_No_Applicant_Test">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testCases.TC_30_No_Applicant_Test@2c78324b]" started-at="2025-06-30T11:50:42 IST" name="getDriver" finished-at="2025-06-30T11:50:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_30_No_Applicant_Test@2c78324b]" started-at="2025-06-30T11:50:42 IST" name="setUp" finished-at="2025-06-30T11:50:44 IST" duration-ms="1937" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="isCount()[pri:0, instance:testCases.TC_30_No_Applicant_Test@2c78324b]" started-at="2025-06-30T11:50:44 IST" name="isCount" finished-at="2025-06-30T11:50:49 IST" duration-ms="5016" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [9] but found [0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [9] but found [0]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at pageObjects.Requirement_NoApplicant_Verified_Page.no_applicant_count(Requirement_NoApplicant_Verified_Page.java:54)
+at testCases.TC_30_No_Applicant_Test.isCount(TC_30_No_Applicant_Test.java:13)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isCount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_30_No_Applicant_Test@2c78324b]" started-at="2025-06-30T11:50:49 IST" name="tearDown" finished-at="2025-06-30T11:50:50 IST" duration-ms="732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_30_No_Applicant_Test -->
+      <class name="testCases.TC27_PartnerUnderreviewTest">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testCases.TC27_PartnerUnderreviewTest@7fd7a283]" started-at="2025-06-30T11:49:39 IST" name="getDriver" finished-at="2025-06-30T11:49:39 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC27_PartnerUnderreviewTest@7fd7a283]" started-at="2025-06-30T11:49:39 IST" name="setUp" finished-at="2025-06-30T11:49:41 IST" duration-ms="1945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="isVerified()[pri:0, instance:testCases.TC27_PartnerUnderreviewTest@7fd7a283]" started-at="2025-06-30T11:49:41 IST" name="isVerified" finished-at="2025-06-30T11:49:51 IST" duration-ms="9921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isVerified -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC27_PartnerUnderreviewTest@7fd7a283]" started-at="2025-06-30T11:49:51 IST" name="tearDown" finished-at="2025-06-30T11:49:52 IST" duration-ms="744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC27_PartnerUnderreviewTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

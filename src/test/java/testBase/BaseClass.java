@@ -31,8 +31,9 @@ public class BaseClass {
     public Logger logger;
     public Properties p;
     
-    String os="Windows";
-    String br="chrome";
+	/*
+	 * String os="Windows"; String br="chrome";
+	 */
     
     @AfterSuite
     public void allure() throws IOException {
@@ -50,9 +51,9 @@ public class BaseClass {
     
     @SuppressWarnings("deprecation")
 	@BeforeClass(groups= "Sanity")
-    //@Parameters({"os","browser"})
+    @Parameters({"os","browser"})
     
-    public void setUp(String os,String br) throws IOException {
+    public void setUp(String os,String browser) throws IOException {
     	
     	FileReader file=new FileReader("./src/test/resources/config.properties");
     	p=new Properties();
@@ -86,7 +87,7 @@ public class BaseClass {
 			}
 			
 			//browser
-			switch(br.toLowerCase())
+			switch(browser.toLowerCase())
 			{
 			case "chrome": capabilities.setBrowserName("chrome"); break;
 			case "edge": capabilities.setBrowserName("MicrosoftEdge"); break;
@@ -101,7 +102,7 @@ public class BaseClass {
 		if(p.getProperty("execution_env").equalsIgnoreCase("local"))
 		{
 
-			switch(br.toLowerCase())
+			switch(browser.toLowerCase())
 			{
 			case "chrome" : driver=new ChromeDriver(); break;
 			case "edge" : driver=new EdgeDriver(); break;

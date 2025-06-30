@@ -22,6 +22,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import pageObjects.HomePage;
@@ -53,7 +54,8 @@ public class BaseClass {
 	@BeforeClass(groups= "Sanity")
     @Parameters({"os","browser"})
     
-    public void setUp(String os,String browser) throws IOException {
+    public void setUp( @Optional("Windows") String os,
+    	    @Optional("chrome") String br) throws IOException {
     	
     	FileReader file=new FileReader("./src/test/resources/config.properties");
     	p=new Properties();
@@ -87,7 +89,7 @@ public class BaseClass {
 			}
 			
 			//browser
-			switch(browser.toLowerCase())
+			switch(br.toLowerCase())
 			{
 			case "chrome": capabilities.setBrowserName("chrome"); break;
 			case "edge": capabilities.setBrowserName("MicrosoftEdge"); break;
@@ -102,7 +104,7 @@ public class BaseClass {
 		if(p.getProperty("execution_env").equalsIgnoreCase("local"))
 		{
 
-			switch(browser.toLowerCase())
+			switch(br.toLowerCase())
 			{
 			case "chrome" : driver=new ChromeDriver(); break;
 			case "edge" : driver=new EdgeDriver(); break;
